@@ -1,14 +1,11 @@
 pipeline {
     
-agent { label 'docker' }
+agent any
     
     
   
     stages {
         
-        stage('Clone sources') {
-        git url: 'https://github.com/Ramabhadram/DEVOP.git'
-    }
         stage('Build') {
             steps {
                 echo 'Building..'
