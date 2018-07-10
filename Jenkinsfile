@@ -17,6 +17,8 @@ agent {label 'docker'}
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+               sh 'sudo apt update -y'
+               sh 'sudo apt install tomcat8 -y'
             }
         }
     }
