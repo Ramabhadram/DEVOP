@@ -20,9 +20,11 @@ agent { label 'docker' }
                 parameters {
                     string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
                 }
-                steps {
-                }
             }
+            steps {
+                echo "Hello, ${PERSON}, nice to meet you."
+            }
+        }
            
         
         stage('Deploy') {
