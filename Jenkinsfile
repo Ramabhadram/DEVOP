@@ -1,7 +1,7 @@
 pipeline {
 
 agent { label 'jenkinslave'} 
-  
+   
     stages {
          
         stage('Build') {
