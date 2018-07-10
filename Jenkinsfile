@@ -21,7 +21,7 @@ agent { label 'docker' }
                 }
             }
             steps {
-                echo "Hello, ${PERSON}, nice to meet you."
+                
             }
         }
            
