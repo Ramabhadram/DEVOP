@@ -8,7 +8,7 @@ agent {label 'docker'}
                 echo 'Building..' 
                  sh 'mvn package'
             }
-        }
+        } 
         stage('Test') {
             steps {
                 echo 'Testing..'
