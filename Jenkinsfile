@@ -1,6 +1,5 @@
 pipeline {
- 
-   agent {label 'jenkinsmaster'}  
+agent {label 'docker'}  
    
     stages {
          
