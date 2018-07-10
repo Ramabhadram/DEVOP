@@ -16,7 +16,6 @@ agent { label 'docker' }
             input {
                 message "Should we continue?"
                 ok "Yes, we should."
-                submitter "vrbs"
                 parameters {
                     string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
                 }
