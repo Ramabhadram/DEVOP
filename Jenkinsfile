@@ -1,6 +1,6 @@
 pipeline {
 
-agent Master
+agent {Master}
    
     stages {
          
