@@ -1,31 +1,27 @@
 pipeline {
-    agent any
+    
+agent any
+    
+    
+  
     stages {
         
+        stage('Clone sources') {
+           }
         stage('Build') {
             steps {
                 echo 'Building..'
                  sh 'mvn package'
             }
         }
-        stage('Decision') {
-            input {
-                message "Should we continue?"
-                ok "Yes, we should."
-                submitter "admin"
-                parameters {
-                    string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
-                }
-            }
+        stage('Test') {
             steps {
-                echo 'vrbs'
+                echo 'Testing..'
             }
         }
-           
-        
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                echo 'Deploying....'
             }
         }
     }
