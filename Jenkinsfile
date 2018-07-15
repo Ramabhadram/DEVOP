@@ -9,7 +9,7 @@ pipeline {
         }
         stage('vrbs1') { 
             steps {
-                echo 'Testing..'
+                echo 'Testing...'
             }
         }
         stage('vrbs2') {
